@@ -65,8 +65,7 @@ The dataset, sourced from DHS, includes the following features:
 ### Steps
 1. Clone this repository:
    bash
-   git clone https://github.com/pranav290804/Violence-Against-Women-Analysis
-   cd violence-against-women-analysis
+   git clone https://github.com/Manoj-144/Analysis-of-Attitudes-Towards-Violence-Against-Women
 
 2. Install the required libraries:
    bash
