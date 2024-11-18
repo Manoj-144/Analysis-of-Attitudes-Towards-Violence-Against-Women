@@ -1,97 +1,61 @@
 # Analysis of Attitudes Towards Violence Against Women
 
-This project leverages data from the Demographic and Health Surveys (DHS) Program to analyze attitudes and perceived justifications for violence against women across African, Asian, and South American countries. The aim is to uncover patterns and key factors influencing these attitudes to support efforts to eliminate violence against women globally.
+## About the Project
 
----
+This project is a collaborative effort by **Manoj R** and **Pranav**, focusing on attitudes and perceived justifications for violence against women across African, Asian, and South American countries. The study leverages data to understand how factors like education, employment, marital status, and age influence these attitudes. It supports global efforts to eliminate violence against women by providing actionable insights for policies and awareness campaigns.
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Dataset Description](#dataset-description)
-3. [Key Insights](#key-insights)
-4. [Technologies Used](#technologies-used)
-5. [Installation and Setup](#installation-and-setup)
-6. [Usage](#usage)
+## Data Source
 
----
+The data for this analysis was sourced from the [Demographic and Health Surveys (DHS) Program](https://www.kaggle.com/datasets/andrewmvd/violence-against-women-and-girls), which gathers population, health, and nutrition data to inform national and international policy-making.
 
-## Project Overview
+### Dataset Overview
+- **Scope**: Representative survey data from men and women across multiple countries.
+- **Focus**: Attitudes toward violence against women, segmented by sociodemographic factors like education level, marital status, employment, and age group.
 
-### Purpose
-This analysis highlights how sociodemographic factors like education, employment, and marital status influence perceptions of violence against women. Insights gained aim to inform policies and awareness campaigns for reducing gender-based violence.
+## Tools Used
 
-### Objectives
-- Identify demographic factors that justify violence against women.
-- Emphasize the importance of education in shaping attitudes.
-- Create visualizations and summaries for global and regional insights.
+- **Python**:
+  - **pandas** and **numpy**: For data manipulation and cleaning.
+  - **matplotlib** and **seaborn**: For creating visualizations to communicate insights.
+  - **folium** and **geopandas**: For geospatial analysis to map regional trends.
+- **Jupyter Notebook**: Used for integrating code, visualizations, and narrative in an interactive environment.
 
----
+### Why These Tools?
 
-## Dataset Description
+- Python's rich library ecosystem provides efficient handling of large datasets and versatile visualization capabilities.
+- Tools like **matplotlib** and **seaborn** simplify the creation of professional, intuitive graphics.
+- **folium** and **geopandas** enable detailed geographic mapping to identify global and regional patterns.
+- Jupyter Notebook facilitates reproducible and accessible documentation of the analysis.
 
-The dataset, sourced from DHS, includes the following features:
-- *RecordID*: Unique identifier for each survey entry.
-- *Country*: Country where the survey was conducted.
-- *Gender*: Gender of the respondent (Male/Female).
-- *Demographics Question*: Type of demographic grouping (e.g., marital status, education).
-- *Demographics Response*: Respondent's demographic category.
-- *Question*: Survey question exploring attitudes toward violence.
-- *Survey Year*: Year of the survey.
-- *Value*: Percentage of respondents agreeing with the statement.
+## Analysis Performed
 
----
+1. **Exploratory Data Analysis (EDA)**:
+   - Examined the distribution of responses based on sociodemographic factors.
+   - Identified patterns and correlations between education, employment, and attitudes toward violence.
+
+2. **Trend Analysis**:
+   - Tracked changes in attitudes over time and across regions.
+   - Highlighted key differences in perceptions between countries and continents.
+
+3. **Visualization**:
+   - Created bar plots, heatmaps, and geospatial maps to showcase insights.
+   - Visualized the impact of education and employment on attitudes.
+
+4. **Policy Insights**:
+   - Interpreted trends to provide actionable recommendations for awareness campaigns, education programs, and economic empowerment initiatives.
 
 ## Key Insights
-- *Education*: Respondents with higher education levels are less likely to justify violence against women.
-- *Public Awareness*: Campaigns targeting awareness and education can significantly reduce harmful attitudes.
-- *Global Trends*: There are regional differences in attitudes, requiring localized interventions.
 
----
+- **Education**: Higher education levels significantly reduce justification for violence against women.
+- **Employment and Empowerment**: Women’s economic independence correlates with decreased tolerance for violence.
+- **Marital Status**: Attitudes vary by marital status, with cultural and regional factors influencing perceptions.
+- **Global and Regional Trends**:
+  - Cultural norms heavily influence attitudes in specific regions, necessitating tailored interventions.
+  - Education and public awareness are critical in fostering societal change.
 
-## Technologies Used
-- *Python Libraries*: 
-  - pandas and numpy for data manipulation.
-  - matplotlib and seaborn for visualization.
-  - folium and geopandas for geospatial analysis.
-- *Jupyter Notebook*: For interactive data exploration and analysis.
+## Policy Recommendations
 
----
-
-## Installation and Setup
-
-### Prerequisites
-- Python 3.8 or later
-- Libraries: pandas, numpy, matplotlib, seaborn, folium, geopandas
-
-### Steps
-1. Clone this repository:
-   bash
-   git clone https://github.com/Manoj-144/Analysis-of-Attitudes-Towards-Violence-Against-Women
-
-2. Install the required libraries:
-   bash
-   pip install -r requirements.txt
-
-3. Download the dataset:
-   - Locate the dataset file in the data folder of the repository (data/Violence Against Women and Girls.csv).
-   - Copy the file path of the dataset.
-
-4. Update the dataset file path in the notebook:
-   - Open the Jupyter Notebook:
-     bash
-     jupyter notebook Notebook.ipynb
-
-    - In the notebook, locate the line where the dataset is loaded:
-      bash
-      file_path = "C:/Users/prana/Downloads/Violence Against Women Girls Data.csv"
-
-    - Replace the file path with the path to the dataset in the repository, for example:  
-      ```bash
-      file_path = "./data/Violence Against Women Girls Data.csv"
-
-5. Run the notebook cells to execute the analysis.
-
----
-
-## Acknowledgments
-- *Data source:* https://www.kaggle.com/datasets/andrewmvd/violence-against-women-and-girls
-- *Inspired by efforts to end violence against women globally.*
+- **Promote Education**: Implement programs that enhance access to education for women and girls.
+- **Awareness Campaigns**: Develop targeted campaigns to challenge harmful cultural norms.
+- **Economic Empowerment**: Create initiatives supporting women's employment and independence.
+- **Localized Interventions**: Customize strategies to address regional trends and cultural barriers.
